@@ -66,9 +66,8 @@
 
 ### 4. 참고 자료
 - https://desilo.ai/blog/eda_data_analysis
-- 
+- https://m.blog.naver.com/cslee_official/223116442952
 
-### 6. 나의 정리 메모
 
 <a name="topic-3"></a>
 ## Topic 3. 데이터 전처리 - 결측값, 중복값, 이상치 처리
