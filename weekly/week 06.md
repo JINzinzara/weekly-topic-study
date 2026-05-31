@@ -1,8 +1,4 @@
-# 📚 Week 05 | CNN · 오토인코더
-
-> **날짜:** 2026-05-28
-> **분야:** Data / AI / ML
-
+# Week 05 | CNN · 오토인코더
 ---
 
 ## 목차
@@ -15,44 +11,43 @@
 ## Topic 1. CNN을 구성하는 각 레이어의 역할
 
 ### 1. 핵심 개념 요약
-> 면접관에게 30초 안에 설명한다면?
-
-
+CNN은 합성곱을 통해 데이터의 특징을 추출하고 추출된 특징을 통해 클래스에 대한 예측과 최종 확률을 출력한다
 
 ### 2. 상세 내용
 
 #### CNN (Convolutional Neural Network)이란?
-- **정의:**
-- **주요 사용 분야:**
+- **정의:** 합성곱 작업을 수행하는 신경망 네트워크으로, 이미지의 공간 구조를 살리도록 설계된 신경망이다
+- **주요 사용 분야:** 이미지, 영상 데이터 분석
 
 #### 각 레이어의 역할
 
 | 레이어 | 역할 |
 |--------|------|
-| Convolutional Layer (합성곱 레이어) | |
-| Activation Layer (활성화 레이어) | |
-| Pooling Layer (풀링 레이어) | |
-| Fully Connected Layer (완전연결 레이어) | |
-| Batch Normalization Layer | |
-| Dropout Layer | |
+| Input Layer (입력 레이어) | 입력 데이터를 받는다 |
+| Convolutional Layer (합성곱 레이어) | 특징 추출 |
+| Pooling Layer (풀링 레이어) | 특징 맵의 크기를 축소 |
+| Fully Connected Layer (완전연결 레이어) | 최종 예측 |
+| Output Layer | 각 클래스에 대한 확률 출력 |
 
 #### 레이어 상세 설명
 
 ##### Convolutional Layer
--
+- 합성곱 연산을 수행하는 층
+- 구성 요소: 입력 채널(대체로 컬러; 흑백=1, RGB=3), 출력 채널(어느 정도 깊이의 채널로 추출할 것인지), 필터의 크기(=kernel)
 
 ##### Pooling Layer
--
+- Max Pooling: Pool의 크기(2x2)일 때, Pool의 영역(2x2)에서 가장 큰 최댓값만 추출
+- Average Pooling: Pool의 크기(2x2)일 때, Pool의 영역(2x2)의 평균 값을 추출
+- 특징 맵의 크기를 축소하여 연산량을 감소시키는 대신 위치 변화에 둔감해진다
 
 ##### Fully Connected Layer
--
+- 앞선 레이어 과정을 거쳐 추출된 특징을 기반으로 최종 예측을 수행한다
+- MLP 구조
+- 특징 맵을 한 줄의 벡터(Flatten)로 변환하여 FC Layer에 전달
 
-### 3. 왜 중요한가? (면접 포인트)
--
--
-
-### 4. 참고 자료
--
+### 3. 참고 자료
+- https://bong-sik.tistory.com/21
+- https://velog.io/@gyurili/%EB%94%A5%EB%9F%AC%EB%8B%9D-CNN-Convolutional-Neural-Network-%EC%A0%95%EB%A6%AC-%EB%A0%88%EC%9D%B4%EC%96%B4-%EA%B5%AC%EC%84%B1
 
 ---
 
@@ -60,23 +55,23 @@
 ## Topic 2. 오토인코더 - 적합한 상황 & 인코더/디코더 개념
 
 ### 1. 핵심 개념 요약
-> 면접관에게 30초 안에 설명한다면?
 
 
 
 ### 2. 상세 내용
 
 #### 오토인코더 (Autoencoder)란?
-- **정의:**
-- **구조:**
+- **정의:** 입력 데이터를 압축 후, 원본 데이터 형태로 복원하도록 학습하는 인공 신경망
+- **구조:** 인코더(Encoder) &rarr; 잠재 벡터(공간) &rarr; 디코더(Decoder) / 비지도 학습
 
 #### 오토인코더가 적합한 상황
--
--
--
+- 차원 축소
+- 노이즈 제거
+- 이상 탐지
+- 데이터 생성
 
 #### 인코더 (Encoder)
-- **정의:**
+- **정의:** 
 - **역할:**
 - **출력:**
 
