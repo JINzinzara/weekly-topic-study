@@ -62,33 +62,36 @@
 ### 2. 상세 내용
 
 #### 데이터 증강이란?
-- **정의:**
-- **목적:**
-- **언제 사용하나:**
+- **정의:** 데이터에 약간의 변형을 가해 새로운 학습 샘플을 생성
+- **목적:** 과적합을 줄이고 모델의 일반화 성능 향상
 
-#### 이미지 데이터 주요 증강 기법
-
-| 증강 기법 | 설명 | 효과 |
+#### 데이터별 주요 증강 기법
+- **이미지 증강**
+| 기하학적 변환 | 광도 변화 | 이미지 혼합 |
 |----------|------|------|
-| 좌우 반전 (Horizontal Flip) | | |
-| 상하 반전 (Vertical Flip) | | |
-| 회전 (Rotation) | | |
+| 좌우 반전 (Horizontal Flip) | 밝기 조절 (Brightness) | Cutout |
+| 상하 반전 (Vertical Flip) | 색상 변환 (Color Jitter) | Mixup |
+| 회전 (Rotation) | | CutMix|
 | 크롭 (Random Crop) | | |
-| 밝기 조절 (Brightness) | | |
-| 색상 변환 (Color Jitter) | | |
 | 노이즈 추가 (Noise) | | |
-| Cutout / Mixup | | |
+
+- **텍스트 증강**
+| 규칙 기반 | 신경망 방법 | 혼합 텍스트 |
+|---------|----------|----------|
+| 무작위 삭제/삽입 | EDA (Easy Data Augmentation) | Mixup |
+| 동의어 교체 | BERT 마스킹 | SentMix |
+| 문장 반전/수동화 | GPT 생성 | CutMix |
+| 역번역 | 조건부 생성 (Conditional Generation) | |
 
 #### 데이터 증강 시 주의사항
--
--
-
-### 3. 왜 중요한가?
--
--
+- 과도한 데이터 증강은 오히려 학습을 방해
+- 레이블 일관성 유지
+- 데이터 도메인에 맞는 증강 사용
+- 테스트셋에서는 TTA가 아닌 이상 증강 사용 금지
 
 ### 4. 참고 자료
--
+- https://www.ibm.com/kr-ko/think/topics/data-augmentation
+- https://velog.io/@ssalgwaja/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A6%9D%EA%B0%95-%EA%B8%B0%EB%B2%95
 
 ---
 
