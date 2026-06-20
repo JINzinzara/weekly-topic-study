@@ -1,4 +1,4 @@
-# Week 07 | YOLO · mAP
+# Week 08 | YOLO · mAP
 
 ---
 
