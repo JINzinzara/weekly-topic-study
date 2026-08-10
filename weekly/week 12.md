@@ -95,6 +95,11 @@ PEFT는 사전학습된 LLM을 Fine-Tuning하는 방법으로, 가장 필요한 
 - AI 접근성 향상: 컴퓨팅 자원이 부족한 중소규모 조직도 활용 가능
 - 유연한 AI: 개별 사용자에 맞게 모델 최적화 용이
 
+#### PEFT가 효과적인 상황
+- 자원이 제한적일 떄(Limited Resources)
+- 여러 과제를 적응시킬 떄(Multi-task)
+- 빠른 실험이 필요할 떄(Fast Iteration)
+
 ### 3. 참고 자료
 - https://4n3mone.tistory.com/7
 - https://www.ibm.com/kr-ko/think/topics/parameter-efficient-fine-tuning
