@@ -1,4 +1,4 @@
-# 위클리 페이퍼 13 | LangChain RAG · 평가 방법 · Agent
+# Week 13 | LangChain RAG · 평가 방법 · Agent
 
 ---
 
