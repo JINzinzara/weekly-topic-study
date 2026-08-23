@@ -1,4 +1,4 @@
-# 8월 4째주 | LangChain RAG · 평가 방법 · Agent
+# 위클리 페이퍼 13 | LangChain RAG · 평가 방법 · Agent
 
 ---
 
